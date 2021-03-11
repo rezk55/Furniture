@@ -520,6 +520,11 @@ footer p span {
   .about .text {
     margin-top: 30px;
   }
+
+  .portfolio .btns-filter .btn {
+    font-size: 13px !important;
+    padding: 0 7px;
+  }
 }
 /* start framework */
 .active {
