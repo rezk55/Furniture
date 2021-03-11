@@ -1,0 +1,576 @@
+/* variables */
+/**************/
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+/* start nav */
+nav {
+  background-color: #00000080;
+}
+nav .logo a {
+  font-size: 30px;
+  color: #fff;
+}
+nav .logo a span {
+  color: #FB2249;
+}
+nav .navbar-toggler:focus {
+  box-shadow: none;
+}
+nav .navbar-toggler span {
+  display: block;
+  height: 3px;
+  width: 30px;
+  background-color: #fff;
+  transition: 0.3s;
+}
+nav .navbar-toggler .two {
+  margin: 5px 0;
+}
+nav li {
+  margin-right: 20px;
+}
+nav li a {
+  position: relative;
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 18px;
+  padding: 10px !important;
+  transition: 0.5s;
+}
+nav li a::before, nav li a::after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 45px;
+  background-color: #fff;
+  transform: rotate(90deg);
+  transition: 0.3s;
+}
+nav li a::before {
+  top: 0;
+  left: 0;
+  transform-origin: 0;
+}
+nav li a::after {
+  bottom: 0;
+  right: 0;
+  transform-origin: 100%;
+}
+nav li a:hover {
+  color: #FB2249;
+}
+nav li a:hover::before, nav li a:hover::after {
+  transform: rotate(0deg);
+  left: 50%;
+  transform: translate(-50%);
+}
+nav .top {
+  transform: rotate(-45deg) translate(-10px, 0);
+}
+nav .hidden {
+  opacity: 0;
+}
+nav .bottom {
+  transform: rotate(45deg) translate(-10px, -1px);
+}
+
+/* end nav */
+/* start header */
+.header {
+  height: 650px;
+}
+.header .carousel,
+.header .carousel-inner,
+.header .carousel-item {
+  height: 100%;
+}
+.header .carousel-indicators {
+  margin-bottom: 70px;
+}
+.header .carousel-indicators button.active {
+  background-color: #FB2249;
+}
+.header .carousel-inner .info {
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+.header .carousel-inner .info p {
+  font-size: 25px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.header .carousel-inner .info h2 {
+  margin: 30px auto 25px auto;
+  font-size: 45px;
+  text-transform: capitalize;
+}
+.header .carousel-inner .info .buttons .btn {
+  border-radius: 50px;
+  margin-left: 10px;
+  color: #fff;
+  background: transparent;
+  border: 1px solid #fff;
+}
+.header .carousel-inner .info .buttons .btn:hover {
+  border: 1px solid #FB2249;
+  background: #FB2249;
+}
+.header .carousel-inner .info .buttons .btn:focus {
+  border: none !important;
+  outline: none !important;
+}
+.header img {
+  width: 100%;
+  height: 525px;
+  border-radius: 0 0 50% 50%/0 0 100% 100%;
+  transform: scale(1.3);
+  filter: brightness(0.4);
+}
+
+/* end header */
+/* start about */
+.about {
+  background-color: #F9F9F9;
+}
+.about .img img {
+  width: 100%;
+  height: 270px;
+}
+.about .text h3 {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.about .text p {
+  letter-spacing: 1px;
+}
+.about .text ul {
+  padding: 0;
+}
+.about .text ul li {
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  line-height: 30px;
+}
+.about .text ul li i {
+  color: #FB2249;
+  margin-right: 10px;
+}
+
+/* end about */
+/* start  services */
+.services .box i {
+  font-size: 35px;
+  transition: 0.3s;
+}
+.services .box h3 {
+  text-transform: capitalize;
+  font-weight: 600;
+  transition: 0.3s;
+}
+.services .box p {
+  font-size: 15px;
+}
+.services .box:hover i,
+.services .box:hover h3 {
+  color: #FB2249;
+  cursor: pointer;
+}
+
+/* end services */
+/* start team */
+.team {
+  overflow-x: hidden;
+}
+.team .box .image {
+  position: relative;
+}
+.team .box .image img {
+  width: 100%;
+}
+.team .box .image .overlay {
+  opacity: 0;
+  transition: 0.3s;
+}
+.team .box .image .links {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -230%);
+  transition: 0.5s;
+}
+.team .box .image .links a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+.team .box .image .links a i {
+  font-size: 20px;
+}
+.team .box .image .links a:hover {
+  color: #FB2249;
+  border: 1px solid #FB2249;
+}
+.team .box .image:hover .overlay {
+  opacity: 1;
+}
+.team .box .image:hover .overlay .links {
+  transform: translate(-50%, -50%);
+}
+.team .box .info h5 {
+  text-transform: capitalize;
+}
+.team .box .info p {
+  text-transform: capitalize;
+}
+
+/* end team */
+/* start back */
+.back img {
+  width: 100%;
+  height: 360px;
+}
+.back .box {
+  position: relative;
+}
+.back .box img {
+  filter: brightness(0.3);
+}
+.back .box .info {
+  position: absolute;
+  top: 25%;
+  left: 10%;
+  color: #fff;
+}
+.back .box .info h3 {
+  text-transform: uppercase;
+}
+.back .box .info p {
+  width: 90%;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 25px 0;
+  letter-spacing: 1px;
+}
+.back .box .info .btn {
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 50px;
+  padding: 5px 15px;
+}
+.back .box .info .btn:hover {
+  border: 1px solid #FB2249;
+  background-color: #FB2249;
+}
+
+/* end back */
+/* start portfolio */
+.portfolio .btns-filter .btn {
+  border: 1px solid #444;
+  margin-left: 10px;
+  border-radius: 15px;
+  padding: 0 15px;
+}
+.portfolio .btns-filter .btn:hover {
+  background-color: #FB2249;
+  border: 1px solid #FB2249;
+  color: #fff;
+}
+.portfolio .box {
+  overflow: hidden;
+}
+.portfolio .box .image {
+  position: relative;
+}
+.portfolio .box .image a {
+  display: block;
+  width: 100%;
+}
+.portfolio .box .image img {
+  width: 100%;
+  height: 250px;
+}
+.portfolio .box .image .overlay {
+  opacity: 0;
+  transform: translate(0, -50px);
+  transition: 0.3s;
+}
+.portfolio .box .image .info {
+  opacity: 0;
+  transition: 0.3s;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+}
+.portfolio .box .image .info h3 {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.portfolio .box .image .info span {
+  font-weight: bold;
+  color: #FB2249;
+}
+.portfolio .box:hover {
+  cursor: pointer;
+}
+.portfolio .box:hover .overlay {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+.portfolio .box:hover .info {
+  opacity: 1;
+}
+
+/* end portfolio */
+/*start testimonials */
+.testimonials {
+  position: relative;
+  height: 350px;
+  background-image: url(../images/header-1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.testimonials .carousel {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 75%;
+}
+.testimonials .carousel .carousel-indicators {
+  bottom: -50px;
+}
+.testimonials .carousel .carousel-indicators button.active {
+  background-color: #FB2249 !important;
+}
+.testimonials .carousel .info {
+  color: #fff;
+}
+.testimonials .carousel .info i {
+  font-size: 30px;
+  padding: 15px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+.testimonials .carousel .info p {
+  letter-spacing: 1px;
+}
+.testimonials .carousel .info span {
+  font-size: 20px;
+  color: #FB2249;
+}
+
+/* end testimonials */
+/* start contact */
+.contact .email {
+  border-left: 1px solid #444;
+  border-right: 1px solid #444;
+}
+.contact i {
+  font-size: 25px;
+  border: 1px solid #444;
+  padding: 10px;
+  border-radius: 50%;
+}
+.contact p {
+  margin-top: 20px;
+  line-height: 30px;
+}
+.contact .info form input {
+  display: block;
+  width: 100%;
+  height: 35px;
+  padding: 10px;
+  margin: 15px auto;
+}
+.contact .info form input,
+.contact .info form textarea {
+  box-shadow: none;
+  padding: 10px;
+}
+.contact .info form input:focus,
+.contact .info form textarea:focus {
+  border: none;
+  outline: 1px solid #FB2249;
+}
+.contact .info form button {
+  margin-top: 30px;
+  padding: 7px;
+  border-radius: 15px;
+  outline: none;
+  border: 1px solid #444;
+  background: transparent;
+  transition: 0.3s;
+}
+.contact .info form button:hover {
+  border: 1px solid transparent;
+  background: #FB2249;
+  color: #fff;
+}
+
+/* end contact */
+/* start scroll up */
+.scroll-up {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  background-color: #FB2249;
+  color: #fff;
+  border: none;
+  transition: 0.3s;
+}
+.scroll-up:hover {
+  transform: translate(0, -5px);
+}
+
+/* end scroll up */
+/* start footer */
+footer {
+  background-color: #F1F1F1;
+}
+footer p {
+  margin: 0;
+  padding: 10px 0;
+  text-transform: capitalize;
+}
+footer p span {
+  color: #FB2249;
+}
+
+/* end footer */
+/* Responsive */
+@media (max-width: 991px) {
+  nav ul li a {
+    text-align: center;
+    width: 150px !important;
+    display: inline-block !important;
+  }
+
+  .header .info {
+    width: 75%;
+  }
+  .header .info p {
+    font-size: 20px !important;
+  }
+  .header .info h2 {
+    font-size: 35px !important;
+  }
+
+  .about .text h3 {
+    font-size: 18px;
+  }
+  .about .text p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+  .header .info p {
+    font-size: 20px !important;
+  }
+  .header .info h2 {
+    font-size: 25px !important;
+  }
+
+  .about .text h3 {
+    font-size: 18px;
+  }
+  .about .text p {
+    font-size: 14px;
+  }
+
+  .services h3 {
+    font-size: 20px !important;
+  }
+  .services p {
+    font-size: 14px !important;
+  }
+}
+@media (max-width: 575px) {
+  .header .info p {
+    font-size: 15px !important;
+  }
+  .header .info h2 {
+    font-size: 20px !important;
+  }
+  .header .btn {
+    font-size: 12px;
+  }
+  .header .carousel-indicators {
+    margin-bottom: 120px !important;
+  }
+
+  .about .text {
+    margin-top: 30px;
+  }
+}
+/* start framework */
+.active {
+  color: #FB2249;
+}
+.active::before, .active::after {
+  transform: rotate(0deg);
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.active-btn {
+  border: 1px solid #FB2249 !important;
+  background: #FB2249 !important;
+  color: #fff;
+}
+
+.heading {
+  position: relative;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.heading h2 {
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.heading span {
+  position: absolute;
+  display: block;
+  width: 60px;
+  height: 3px;
+  left: 50%;
+  transform: translate(-50%);
+  background: #FB2249;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=style.css.map */
